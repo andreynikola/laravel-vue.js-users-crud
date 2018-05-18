@@ -1,0 +1,103 @@
+*{margin:0; padding:0; outline:0; box-sizing:border-box;}
+body{font-family:Arial; font-size:14px}
+.all{margin:40px auto 40px auto; /*width:960px;*/ position:relative; z-index:1}
+table td{font-size:12px; vertical-align: top; padding: 2px 0; color: #333;}
+#back_to_all{}
+#bg{background:#000; z-index:0; opacity:0; position:fixed; top:0; right:0; bottom:0; left:0}
+#detail_company{position:relative; background:#fff; z-index:555; margin-bottom:15px}
+#detail_title{}
+#detail_title p{position:absolute; top:10px; left:10px; cursor:pointer; background:#1e90ff; color:#fff; padding:10px; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%}
+H1{text-align:right; margin:0 0 15px 0; text-transform:uppercase; line-height:120%; font-size:20px; position:relative; padding-left:100px}
+#years{ text-align:center;  margin:0;  position:relative;  z-index:555;  background:#fff;  padding:0 0 15px 0}
+#years span{ margin:0 15px;  display:inline-block}
+#years span i{ width:15px;  height:15px;  float:left;  margin-right:10px;  display:inline-block;  -webkit-border-radius:50%;  -moz-border-radius:50%;  border-radius:50%}
+#list{ display:none;  position:relative;  z-index:1}
+/*#all_delimiter, #detail_delimiter{ position:absolute; top:0; right:0; bottom:0;  z-index:2;  display:flex}*/
+.panel .panel-body #all_delimiter p{
+	margin: 0px; 
+}
+#pdf{ position:relative; text-align: right;  }
+.self_analit{
+	padding-left: 4px;
+}
+/*#all_delimiter:before, #detail_delimiter:before{ content:"0%"; position:absolute; bottom:-20px; left:-8px; font-size:12px}
+#all_delimiter >p, #detail_delimiter >p{ flex:auto;  position:relative;  height:100%;  border-right:1px solid #ccc}
+#all_delimiter >p >span, #detail_delimiter >p >span{ position:absolute; bottom:-20px; right:-15px;  font-size:12px}*/
+#detail_table span{ margin-bottom:5px}
+span.percent_class{ display:none;  text-align:right;  color:#fff;  padding:2px 4px;  background:#cb2a2a}
+span.percent_class.good{ background:#ebc142}
+span.percent_class.excellent{ background:#33b86c}
+span.percent_class.perfect{ background:#1ca8dd}
+table{ position:relative; z-index:3;  width:100%;  border-spacing:0;  border-collapse:collapse}
+table tr th{ text-align:center;  background:#909090;  color:#fff;  padding:5px}
+table#all_table tr th{ 
+    background: #EDF0F0;
+   /* padding: 15px;*/
+    font-weight: 400;
+    /*text-transform: uppercase;*/
+    color: #000;
+}
+table tr:hover{ background:#bfccde}
+table td:first-of-type{ text-align:right;  width:30%;  padding-left:5px;  padding-right:5px}
+/*table td:last-of-type{ border-left:1px solid #ccc}*/
+#error{ position:absolute;  top:0; right:0; left:0;  z-index:4;  display:none;  padding:10px;  background:#f00}
+#error >p{ text-align:center;  color:#fff}
+#error >p >span{ color:#fff}
+
+
+.circle{width:960px; height:960px; display:block; background:#ccc; border-radius:50%; position:absolute; top:40px; left:500px; z-index:1}
+#circle{width:900px; background:#dbe8f1; position:relative; margin:-100% auto 0 auto}
+#circle:after{content:"0%"; width:100%; position:absolute; top:50%; left:0; z-index:101; text-align:center; font-size:13px; opacity:0.5;  margin-top:-13px}
+#circle, #circle div{border-radius:50%}
+#circle div{position:absolute; top:0; left:0}
+#circle div span{position:absolute; top:5px; left:5px; width:100%; text-align:center; font-size:13px; opacity:0.5}
+p#show_hide{text-align:center; padding-bottom:50px}
+p#show_hide >span{margin:0 15px; font-size:13px; cursor:pointer; background:#ccc; padding:5px 10px; width:150px; display:inline-block}
+#detail_screen{}
+#detail_screen >p.title{text-align:right; padding:0px 0px 20px 200px; text-transform:uppercase; line-height:150%}
+#detail_screen >p.exit{ position:absolute; top:15px; left:15px; cursor:pointer;  background:#1e90ff;  color:#fff;  padding:10px;  -webkit-border-radius:50%;  -moz-border-radius:50%;  border-radius:50%}
+#detail_screen >p.years{text-align: center;}
+#detail_screen >p.years span{ position:relative;  margin:0 10px;  padding:0 20px}
+#detail_screen >p.years span i{ position:absolute;  top:0; left:0;  width:15px; height:15px;  -webkit-border-radius:50%;  -moz-border-radius:50%;  border-radius:50%}
+#detail_screen table{ width:100%; margin:25px 0 50px 0;  border-spacing:0;  border-collapse:collapse;  position:relative; z-index:3}
+#detail_screen table tr:hover{ background:rgba(219,232,241,0.7)}
+#detail_screen table td{ vertical-align:top; padding:5px 0; text-align:left}
+#detail_screen table td p{ margin:0 0 5px 0;  padding:5px;  color:#fff;  text-align:right;}
+#detail_screen table td:first-of-type{ text-align:right;  width:40%;  padding-left:5px;  padding-right:5px}
+#detail_screen table td:last-of-type{ border-left:1px solid #ccc}
+#table{position:relative; display:block}
+/*#delimiter{ position:absolute; top:0; right:0; bottom:0;  z-index:2;  display:flex}
+#delimiter:before{ content:"0%"; position:absolute; bottom:-20px; left:-8px; font-size:12px}
+#delimiter >p{ flex:auto;  position:relative;  height:100%;  border-right:1px solid #ccc}
+#delimiter >p >span{ position:absolute; bottom:-20px; right:-17px;  font-size:12px}*/
+#chart-labels{}
+#chartjs-tooltip{ opacity:1;  position:absolute;  background:rgba(0,0,0,.7);  color:white;  font-size:13px;  border-radius:3px;  z-index:99999;  display:inline-block; color: #FFF !important;}
+#chartjs-tooltip p{ color: #FFF !important; margin-bottom: 0;}
+.modal .header-filter{
+  margin: 15px 0;
+  margin-top: 10px;
+}
+#pillar{
+	width: auto;
+}
+#radar{
+	width: 100%;
+	height: 0px;
+}
+
+.chart{
+	opacity: 0;
+	width: 100%;
+}
+.chart.active{
+	display: block !important;
+	opacity: 1;
+	height: auto !important;
+	margin: 40px auto;
+}
+.chart.inactive{
+
+}
+.header_tr{
+	font-weight: bold;
+}
